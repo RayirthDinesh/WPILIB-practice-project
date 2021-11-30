@@ -11,6 +11,7 @@ import edu.wpi.first.wpilibj2.command.Command;
 import edu.wpi.first.wpilibj2.command.CommandScheduler;
 import edu.wpi.first.wpilibj.AnalogGyro;
 import edu.wpi.first.wpilibj.Timer;
+import frc.robot.subsystems.Falcon_500;
 
 
 /**
@@ -61,17 +62,20 @@ public class Robot extends TimedRobot {
     if(limitSwitch.get()){
       System.out.println("Switch ON");
       RobotContainer.m_RunMotorRun.goSpeed(0.5);
+      RobotContainer.falcon_motor_dev1.Speed(0.5);
+      RobotContainer.falcon_motor_dev2.Speed(0.5);
   
     }
     else{
       System.out.println("Switch OFF");
       RobotContainer.m_RunMotorRun.goSpeed(0);
-
+      RobotContainer.falcon_motor_dev1.Speed(0);
+      RobotContainer.falcon_motor_dev2.Speed(0);
     }
-    /*if(RobotContainer.motorswitch.switchZero.get()){
-      System.out.println(RobotContainer.gyroOne.robotGyro.getAngle());*/
+    if(RobotContainer.motorswitch.switchZero.get()){
+      System.out.println(RobotContainer.gyroOne.robotGyro.getAngle());
     }
-  
+  }
    
     
   

@@ -24,7 +24,7 @@ public class RunMotorRun extends SubsystemBase {
   }
   public void goSpeed(double speed)
   {
-    //motor.getPIDController().setReference(speed, ControlType.kDutyCycle);
+   
     motor.set(speed);
   }
 }
