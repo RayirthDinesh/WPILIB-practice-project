@@ -39,7 +39,6 @@ public class RobotContainer {
 
   public static final Falcon_500 falcon_motor_dev1 = new Falcon_500();
 
-  public static final Falcon_500 falcon_motor_dev2 = new Falcon_500();
   /** The container for the robot. Contains subsystems, OI devices, and commands. */
   public RobotContainer() {
     // Configure the button bindings

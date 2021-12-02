@@ -14,7 +14,7 @@ import frc.robot.Constants;
 public class RunMotorRun extends SubsystemBase {
   /** Creates a new RunMotorRun. */
 
-  private static CANSparkMax motor = new CANSparkMax(Constants.RobotPort,MotorType.kBrushless);
+  //private static CANSparkMax motor = new CANSparkMax(Constants.RobotPort,MotorType.kBrushless);
 
   public RunMotorRun() {}
 
@@ -25,6 +25,6 @@ public class RunMotorRun extends SubsystemBase {
   public void goSpeed(double speed)
   {
    
-    motor.set(speed);
+    //motor.set(speed);
   }
 }

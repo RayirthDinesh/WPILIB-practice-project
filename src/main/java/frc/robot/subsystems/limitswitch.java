@@ -12,10 +12,10 @@ public class limitswitch extends SubsystemBase {
   public DigitalInput switchZero = new DigitalInput(0);
   /** Creates a new limitswitch. */
   public limitswitch() {
-    if(RobotContainer.motorswitch.switchZero.get()){
-      System.out.println(RobotContainer.gyroOne.robotGyro.getAngle());
+    //if(RobotContainer.motorswitch.switchZero.get()){
+      //System.out.println(RobotContainer.gyroOne.robotGyro.getAngle());
   }
-  }
+  
   @Override
   public void periodic() {
     // This method will be called once per scheduler run
