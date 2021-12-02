@@ -8,7 +8,6 @@ package frc.robot;
 import edu.wpi.first.wpilibj.GenericHID;
 import edu.wpi.first.wpilibj.XboxController;
 import frc.robot.commands.ExampleCommand;
-import frc.robot.commands.RunCommand;
 import frc.robot.subsystems.ExampleSubsystem;
 import frc.robot.subsystems.Falcon_500;
 import frc.robot.subsystems.RunMotorRun;
@@ -33,8 +32,6 @@ public class RobotContainer {
   private final ExampleCommand m_autoCommand = new ExampleCommand(m_exampleSubsystem);
 
   public static final RunMotorRun m_RunMotorRun = new RunMotorRun();
-
-  private final RunCommand m_RunCommand =  new RunCommand(m_RunMotorRun);
 
   public static final gyro gyroOne = new gyro();
 
