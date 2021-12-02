@@ -59,10 +59,9 @@ public class Robot extends TimedRobot {
     
       
     CommandScheduler.getInstance().run();
-    //RobotContainer.m_RunMotorRun.goSpeed(0.5);
-    RobotContainer.falcon_motor_dev1.Speed(0.5);
+  
 
-    /*if(limitSwitch.get()){
+    if(limitSwitch.get()){
       System.out.println("Switch ON");
       RobotContainer.m_RunMotorRun.goSpeed(0.5);
       RobotContainer.falcon_motor_dev1.Speed(0.5);
@@ -74,9 +73,9 @@ public class Robot extends TimedRobot {
       RobotContainer.m_RunMotorRun.goSpeed(0);
       RobotContainer.falcon_motor_dev1.Speed(0);
     }
-    if(RobotContainer.motorswitch.switchZero.get()){
+    if(RobotContainer.motorswitch.limitswitch.get()){
       System.out.println(RobotContainer.gyroOne.robotGyro.getAngle());
-    }*/
+    }
   }
    
     
