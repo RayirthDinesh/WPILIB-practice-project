@@ -11,7 +11,7 @@ import edu.wpi.first.wpilibj2.command.SubsystemBase;
 
 public class gyro extends SubsystemBase {
 
-  public static Gyro robotGyro = new ADXRS450_Gyro(SPI.Port.kOnboardCS0);
+  public Gyro robotGyro = new ADXRS450_Gyro(SPI.Port.kOnboardCS0);
 
 
   /** Creates a new gyro. */

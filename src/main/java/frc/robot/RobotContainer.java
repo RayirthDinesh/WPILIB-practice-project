@@ -24,6 +24,9 @@ import frc.robot.subsystems.limitswitch;
 public class RobotContainer {
   public static Object gyro;
 
+
+  public static Object limitswitch;
+
 // The robot's subsystems and commands are defined here...
   private final ExampleSubsystem m_exampleSubsystem = new ExampleSubsystem();
 
@@ -35,10 +38,11 @@ public class RobotContainer {
 
   public static final gyro gyroOne = new gyro();
 
-  public static final limitswitch motorswitch = new limitswitch();
-
   public static final Falcon_500 falcon_motor_dev1 = new Falcon_500();
 
+  public static final Falcon_500 falcon_motor_dev2 = new Falcon_500();
+ 
+  public static final limitswitch motorswitch = new limitswitch();
   /** The container for the robot. Contains subsystems, OI devices, and commands. */
   public RobotContainer() {
     // Configure the button bindings
@@ -51,6 +55,8 @@ public class RobotContainer {
    * edu.wpi.first.wpilibj.Joystick} or {@link XboxController}), and then passing it to a {@link
    * edu.wpi.first.wpilibj2.command.button.JoystickButton}.
    */
+  
+  
   private void configureButtonBindings() {}
 
   /**

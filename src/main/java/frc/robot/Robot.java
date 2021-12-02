@@ -12,7 +12,7 @@ import edu.wpi.first.wpilibj2.command.CommandScheduler;
 import edu.wpi.first.wpilibj.AnalogGyro;
 import edu.wpi.first.wpilibj.Timer;
 import frc.robot.subsystems.Falcon_500;
-
+import frc.robot.subsystems.limitswitch;
 
 /**
  * The VM is configured to automatically run this class, and to call the functions corresponding to
@@ -22,8 +22,6 @@ import frc.robot.subsystems.Falcon_500;
  */
 
 public class Robot extends TimedRobot {
-
-  protected DigitalInput limitSwitch; 
 
   private Command m_autonomousCommand;
 
@@ -61,7 +59,7 @@ public class Robot extends TimedRobot {
     CommandScheduler.getInstance().run();
   
 
-    if(limitSwitch.get()){
+    if(RobotContainer.motorswitch.limitswicth.get()){
       System.out.println("Switch ON");
       RobotContainer.m_RunMotorRun.goSpeed(0.5);
       RobotContainer.falcon_motor_dev1.Speed(0.5);
@@ -73,7 +71,7 @@ public class Robot extends TimedRobot {
       RobotContainer.m_RunMotorRun.goSpeed(0);
       RobotContainer.falcon_motor_dev1.Speed(0);
     }
-    if(RobotContainer.motorswitch.limitswitch.get()){
+    if(RobotContainer.motorswitch.limitswicth.get()){
       System.out.println(RobotContainer.gyroOne.robotGyro.getAngle());
     }
   }
