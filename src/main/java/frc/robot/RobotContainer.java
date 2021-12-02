@@ -36,8 +36,6 @@ public class RobotContainer {
   public static final gyro gyroOne = new gyro();
 
   public static final Falcon_500 falcon_motor_dev1 = new Falcon_500();
-
-  public static final Falcon_500 falcon_motor_dev2 = new Falcon_500();
  
   public static final limitswitch motorswitch = new limitswitch();
   /** The container for the robot. Contains subsystems, OI devices, and commands. */

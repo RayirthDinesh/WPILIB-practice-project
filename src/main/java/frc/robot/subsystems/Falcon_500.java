@@ -3,8 +3,8 @@
 // the WPILib BSD license file in the root directory of this project.
 
 package frc.robot.subsystems;
+import com.ctre.phoenix.motorcontrol.ControlMode;
 import com.ctre.phoenix.motorcontrol.can.WPI_TalonFX;
-import frc.robot.subsystems.limitswitch;
 import edu.wpi.first.wpilibj2.command.SubsystemBase;
 public class Falcon_500 extends SubsystemBase {
   /** Creates a new Falcon_500. */
@@ -15,11 +15,14 @@ public class Falcon_500 extends SubsystemBase {
   @Override
   public void periodic() {
     // This method will be called once per scheduler run
+    //ok lol
   }
   public void Speed(double speed){
-    falcon_motor_dev1.set(speed);
+    falcon_motor_dev1.set(ControlMode.PercentOutput,speed);
 
-    falcon_motor_dev2.set(speed);
-  
+    
+    
+    falcon_motor_dev2.set(ControlMode.Follower,2);
   }
+
 }
